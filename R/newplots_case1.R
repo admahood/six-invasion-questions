@@ -77,7 +77,7 @@ p1_tabs <- all_scales %>%
          tidied = map(model, tidy)) %>%
   unnest(tidied) %>%
   mutate(formula = map(model, formula) %>% as.character,
-         formula = str_c(formula, ", Figure 2b")) %>%
+         formula = str_c("Figure 2b: ",formula)) %>%
   dplyr::select(-data,-model)
 
 p2_tabs<-all_scales  %>% 
@@ -88,7 +88,7 @@ p2_tabs<-all_scales  %>%
          tidied = map(model, tidy)) %>%
   unnest(tidied)%>%
   mutate(formula = map(model, formula) %>% as.character,
-         formula = str_c(formula, ", Figure 2a")) %>%
+         formula = str_c("Figure 2a: ", formula)) %>%
   dplyr::select(-data,-model)
 
 
@@ -99,7 +99,7 @@ p3_tabs<-prev_year_div %>%
          tidied = map(model, tidy)) %>%
   unnest(tidied)%>%
   mutate(formula = map(model, formula) %>% as.character,
-         formula = str_c(formula, ", Figure 2d")) %>%
+         formula = str_c("Figure 2d: ", formula)) %>%
   dplyr::select(-data,-model)
 
 
@@ -110,10 +110,22 @@ p4_tabs<-prev_year_div %>%
          tidied = map(model, tidy)) %>%
   unnest(tidied)%>%
   mutate(formula = map(model, formula) %>% as.character,
-         formula = str_c(formula, ", Figure 2c")) %>%
+         formula = str_c("Figure 2c: ", formula)) %>%
   dplyr::select(-data,-model)
 
 
-bigtab <- bind_rows(p1_tabs, p2_tabs, p3_tabs,p4_tabs) 
+bigtab <- bind_rows(p1_tabs, p2_tabs, p3_tabs,p4_tabs) %>%
+  dplyr::select(formula, scale, term, estimate, std.error, statistic, p.value) %>%
+  mutate(term = str_replace_all(term,"nspp_native","Native Species Richness"),
+         formula = str_replace_all(formula, "nspp_native", "Native Species Richness"),
+         formula = str_replace_all(formula, "invaded", "P(Invaded)"),
+         formula = str_replace_all(formula, "nspp_exotic", "Non-Native Species Richness"),
+         formula = str_replace_all(formula, "next_",""),
+         estimate = signif(estimate,2),
+         std.error = signif(std.error,(2)),
+         statistic = signif(statistic,(2)),
+         p.value = signif(p.value,(2)),
+         p.value = ifelse(p.value < 0.001, "< 0.0001", p.value)) %>%
+  arrange(formula, scale)
 
 write_csv(bigtab, "tables/split_models.csv")

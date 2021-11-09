@@ -1,33 +1,33 @@
-scale,term,estimate,std.error,statistic,p.value,formula
-1m,(Intercept),0.1806996702714511,0.05734724778277365,3.1509737129134012,0.0016272713522283808,"invaded ~ nspp_native, Figure 2b"
-1m,nspp_native,-0.04182526442110567,0.008763216809017127,-4.772820909562404,1.8166332059170343e-6,"invaded ~ nspp_native, Figure 2b"
-10m,(Intercept),0.014539432325816191,0.056100365978982054,0.25916822594817607,0.795505445741831,"invaded ~ nspp_native, Figure 2b"
-10m,nspp_native,0.02962024570602979,0.005259067939393338,5.632223437190782,1.779009892175391e-8,"invaded ~ nspp_native, Figure 2b"
-100m,(Intercept),-0.16560090581092693,0.08020277828514155,-2.06477767169328,0.038944041461280006,"invaded ~ nspp_native, Figure 2b"
-100m,nspp_native,0.06483154848324048,0.005296585247388737,12.2402539476171,1.894389831523397e-34,"invaded ~ nspp_native, Figure 2b"
-plot,(Intercept),-0.1595342055950295,0.19045054592420335,-0.8376673577954556,0.4022175511265715,"invaded ~ nspp_native, Figure 2b"
-plot,nspp_native,0.06871186164714922,0.010188244837417168,6.744229525658753,1.5384118100469207e-11,"invaded ~ nspp_native, Figure 2b"
-1m,(Intercept),0.7040300086872862,0.03494694682641911,20.145680027047604,2.406055486526624e-86,"nspp_exotic ~ nspp_native, Figure 2a"
-1m,nspp_native,-0.096199742025681,0.006385555522554155,-15.06521111372345,5.002204026335198e-50,"nspp_exotic ~ nspp_native, Figure 2a"
-10m,(Intercept),0.6562007891536633,0.030944232906841375,21.20591552969425,4.392408111014629e-95,"nspp_exotic ~ nspp_native, Figure 2a"
-10m,nspp_native,-0.0231501161313376,0.003084924875892651,-7.504272247355424,7.439025715256614e-14,"nspp_exotic ~ nspp_native, Figure 2a"
-100m,(Intercept),0.7100729702117845,0.03450725062301505,20.577500594561776,1.3696362028865022e-86,"nspp_exotic ~ nspp_native, Figure 2a"
-100m,nspp_native,0.004456413171782533,0.001772740680845897,2.5138550832240565,0.012008840982033211,"nspp_exotic ~ nspp_native, Figure 2a"
-plot,(Intercept),0.9703958717441706,0.05980216413914323,16.22676847423658,3.760064422552163e-49,"nspp_exotic ~ nspp_native, Figure 2a"
-plot,nspp_native,0.006047062916646344,0.00195640947236897,3.0908984044756735,0.002090584963220498,"nspp_exotic ~ nspp_native, Figure 2a"
-1m,(Intercept),-2.2498638868924927,0.16144296053985632,-13.93596772116339,3.8297406893178356e-44,"invaded ~ nspp_native, Figure 2d"
-1m,nspp_native,0.08068691888074461,0.021463474907992757,3.7592663455765827,1.7041234473729356e-4,"invaded ~ nspp_native, Figure 2d"
-10m,(Intercept),-1.893090497129327,0.15187524806161196,-12.4647730376799,1.1620214811295387e-35,"invaded ~ nspp_native, Figure 2d"
-10m,nspp_native,0.05336711278122304,0.012935638965348816,4.125587682539652,3.69789259167822e-5,"invaded ~ nspp_native, Figure 2d"
-100m,(Intercept),-1.795402229786416,0.20649287916413092,-8.694741615566027,3.4761993004854755e-18,"invaded ~ nspp_native, Figure 2d"
-100m,nspp_native,0.0734054403523139,0.012805860735413826,5.732175436619863,9.91506387588478e-9,"invaded ~ nspp_native, Figure 2d"
-plot,(Intercept),-2.342499991872227,0.5823996720845843,-4.022151975957871,5.766882704092234e-5,"invaded ~ nspp_native, Figure 2d"
-plot,nspp_native,0.11076141134007733,0.032212800873687254,3.438428461231753,5.851011135967591e-4,"invaded ~ nspp_native, Figure 2d"
-1m,(Intercept),-1.814830424388901,0.16619787102159306,-10.91969718524921,9.66009297198155e-27,"next_nspp_exotic ~ nspp_native, Figure 2c"
-1m,nspp_native,0.03053426488182276,0.022883853622316534,1.3343148136573237,0.18230820544693185,"next_nspp_exotic ~ nspp_native, Figure 2c"
-10m,(Intercept),-1.7632610631677523,0.1503005759808986,-11.731565575582636,3.4704511291853494e-30,"next_nspp_exotic ~ nspp_native, Figure 2c"
-10m,nspp_native,0.04591025811512523,0.012214945627513294,3.7585315166459394,1.7902338243499418e-4,"next_nspp_exotic ~ nspp_native, Figure 2c"
-100m,(Intercept),-1.4011975149628109,0.1685246769095932,-8.314494593064834,9.117624974680004e-16,"next_nspp_exotic ~ nspp_native, Figure 2c"
-100m,nspp_native,0.0538002648991466,0.008738799716781445,6.156482199246646,1.547474589401118e-9,"next_nspp_exotic ~ nspp_native, Figure 2c"
-plot,(Intercept),-1.515491218066758,0.3298261761091047,-4.5948179005824015,1.5105214448645513e-5,"next_nspp_exotic ~ nspp_native, Figure 2c"
-plot,nspp_native,0.07356122446917882,0.012604069760083821,5.836307309416987,9.722358850202662e-8,"next_nspp_exotic ~ nspp_native, Figure 2c"
+formula,scale,term,estimate,std.error,statistic,p.value
+Figure 2a: Non-Native Species Richness ~ Native Species Richness,1m,(Intercept),0.7,0.035,20,< 0.0001
+Figure 2a: Non-Native Species Richness ~ Native Species Richness,1m,Native Species Richness,-0.096,0.0064,-15,< 0.0001
+Figure 2a: Non-Native Species Richness ~ Native Species Richness,10m,(Intercept),0.66,0.031,21,< 0.0001
+Figure 2a: Non-Native Species Richness ~ Native Species Richness,10m,Native Species Richness,-0.023,0.0031,-7.5,< 0.0001
+Figure 2a: Non-Native Species Richness ~ Native Species Richness,100m,(Intercept),0.71,0.035,21,< 0.0001
+Figure 2a: Non-Native Species Richness ~ Native Species Richness,100m,Native Species Richness,0.0045,0.0018,2.5,0.012
+Figure 2a: Non-Native Species Richness ~ Native Species Richness,plot,(Intercept),0.97,0.06,16,< 0.0001
+Figure 2a: Non-Native Species Richness ~ Native Species Richness,plot,Native Species Richness,0.006,0.002,3.1,0.0021
+Figure 2b: P(Invaded) ~ Native Species Richness,1m,(Intercept),0.18,0.057,3.2,0.0016
+Figure 2b: P(Invaded) ~ Native Species Richness,1m,Native Species Richness,-0.042,0.0088,-4.8,< 0.0001
+Figure 2b: P(Invaded) ~ Native Species Richness,10m,(Intercept),0.015,0.056,0.26,0.8
+Figure 2b: P(Invaded) ~ Native Species Richness,10m,Native Species Richness,0.03,0.0053,5.6,< 0.0001
+Figure 2b: P(Invaded) ~ Native Species Richness,100m,(Intercept),-0.17,0.08,-2.1,0.039
+Figure 2b: P(Invaded) ~ Native Species Richness,100m,Native Species Richness,0.065,0.0053,12,< 0.0001
+Figure 2b: P(Invaded) ~ Native Species Richness,plot,(Intercept),-0.16,0.19,-0.84,0.4
+Figure 2b: P(Invaded) ~ Native Species Richness,plot,Native Species Richness,0.069,0.01,6.7,< 0.0001
+Figure 2c: Non-Native Species Richness ~ Native Species Richness,1m,(Intercept),-1.8,0.17,-11,< 0.0001
+Figure 2c: Non-Native Species Richness ~ Native Species Richness,1m,Native Species Richness,0.031,0.023,1.3,0.18
+Figure 2c: Non-Native Species Richness ~ Native Species Richness,10m,(Intercept),-1.8,0.15,-12,< 0.0001
+Figure 2c: Non-Native Species Richness ~ Native Species Richness,10m,Native Species Richness,0.046,0.012,3.8,< 0.0001
+Figure 2c: Non-Native Species Richness ~ Native Species Richness,100m,(Intercept),-1.4,0.17,-8.3,< 0.0001
+Figure 2c: Non-Native Species Richness ~ Native Species Richness,100m,Native Species Richness,0.054,0.0087,6.2,< 0.0001
+Figure 2c: Non-Native Species Richness ~ Native Species Richness,plot,(Intercept),-1.5,0.33,-4.6,< 0.0001
+Figure 2c: Non-Native Species Richness ~ Native Species Richness,plot,Native Species Richness,0.074,0.013,5.8,< 0.0001
+Figure 2d: P(Invaded) ~ Native Species Richness,1m,(Intercept),-2.2,0.16,-14,< 0.0001
+Figure 2d: P(Invaded) ~ Native Species Richness,1m,Native Species Richness,0.081,0.021,3.8,< 0.0001
+Figure 2d: P(Invaded) ~ Native Species Richness,10m,(Intercept),-1.9,0.15,-12,< 0.0001
+Figure 2d: P(Invaded) ~ Native Species Richness,10m,Native Species Richness,0.053,0.013,4.1,< 0.0001
+Figure 2d: P(Invaded) ~ Native Species Richness,100m,(Intercept),-1.8,0.21,-8.7,< 0.0001
+Figure 2d: P(Invaded) ~ Native Species Richness,100m,Native Species Richness,0.073,0.013,5.7,< 0.0001
+Figure 2d: P(Invaded) ~ Native Species Richness,plot,(Intercept),-2.3,0.58,-4,< 0.0001
+Figure 2d: P(Invaded) ~ Native Species Richness,plot,Native Species Richness,0.11,0.032,3.4,< 0.0001
